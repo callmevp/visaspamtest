@@ -971,9 +971,17 @@ async def _(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-            
+       
+    
+################
 
-USTAD_PIC = "https://telegra.ph/file/209cbbbca387d4c2de4b1.jpg"
+import os
+callmevp = os.environ.get("ALIVE_PIC",None)
+if not callmevp:
+ callmevp="https://telegra.ph/file/209cbbbca387d4c2de4b1.jpg"
+#################
+
+
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -1000,112 +1008,23 @@ USTAD_PIC = "https://telegra.ph/file/209cbbbca387d4c2de4b1.jpg"
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-async def start(event):
-    if event.sender_id in SMEX_USERS:
-     await idk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await ydk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await wdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await hdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await sdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await adk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await bdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await cdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await edk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await hdk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await ddk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await vkk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await kkk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await lkk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await mkk.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await sid.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await shy.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await aan.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await ake.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await eel.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await khu.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await shi.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await yaa.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await dav.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await raj.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )
-     await put.send_file(event.chat_id,
-                                  USTAD_PIC,
-                                  caption="𝐇𝐄𝐘 𝐒𝐏𝐀𝐌𝐌𝐄𝐑🔥\n𝐈 𝐀𝐌 𝐀𝐋𝐈𝐕𝐄🔥\n 𝐑𝐄𝐀𝐃𝐘 𝐓𝐎 𝐅𝐔𝐂𝐊 𝐘𝐎𝐔𝐑 𝐇𝐀𝐓𝐄𝐑𝐒🔥\n"                                
-                              )        
+async def alive(event):
+  if event.sender_id in SMEX_USERS:
+    sed = await event.client.get_me()
+    kk = sed.first_name
+    k = sed.id
+    s = f"[{kk}](tg://user?id={k})"
+    tf = f"""
+**{s} Is Oɴ Fɪʀᴇ 🔥
+Hᴇʏᴀ D:) I Aᴍ Aʟɪᴠᴇ
+Aʟʟ Sʏsᴛᴇᴍs Aʀᴇ Wᴏʀᴋɪɴɢ Pʀᴏᴘᴇʟʏ!!
+Mᴀsᴛᴇʀ:-** **[『 ✪「 ☬ ĆΔŁŁ Μ€ VƤ ☬」 ✪ 』](t.me/CALL_ME_VP)**
+**Dᴏ** `.help` **Tᴏ Cʜᴇᴄᴋ Mʏ Cᴏᴍᴍᴀɴᴅs!!**
+"""
+    await event.client.send_file(event.chat_id,amaan786,caption=tf, force_document=False, link_preview=False)
+import time
+from time import sleep
+
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
